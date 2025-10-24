@@ -1,5 +1,3 @@
-const { NotImplementedError } = require('../lib');
-
 /**
  * Extract season from given date and expose the enemy scout!
  *
@@ -12,7 +10,7 @@ const { NotImplementedError } = require('../lib');
  *
  */
 function getSeason(date) {
-if (date === undefined) {
+  if (date === undefined) {
     return 'Unable to determine the time of year!'
   }
 
@@ -29,7 +27,6 @@ if (date === undefined) {
   ) {
     throw new Error('Invalid date!')
   }
-
 
   const seasonList = {
     winter: [12, 1, 2],
