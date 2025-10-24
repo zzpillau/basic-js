@@ -15,7 +15,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 function transform(arr) {
   if (!Array.isArray(arr)) {
-    throw new Error("arr is not Array!")
+    throw new Error("'arr' parameter must be an instance of the Array!")
   }
 
   const result = []
